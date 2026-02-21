@@ -1,4 +1,4 @@
-Here I describe my kernel: what it is supposed to do, what it currently does, and what it might be doing — although I’m not 100% sure about all details.
+# Here I describe my kernel: what it is supposed to do, what it currently does, and what it might be doing — although I’m not 100% sure about all details.
 
 I also describe my hardware specification of the project.
 
@@ -21,7 +21,7 @@ It is not universal — it only works on this specific hardware configuration.
 
 
 
-The kernel is written entirely with the help of Copilot.
+# The kernel is written entirely with the help of Copilot.
 It may contain mistakes, because AI can lose context and generate fragments
 that later need to be corrected.
 
@@ -29,7 +29,7 @@ All libraries are in a single folder because it makes compilation with Makefile 
 
 
 
-Things that may be unclear — kernel libraries:
+# Things that may be unclear — kernel libraries:
 
 kheap — a library that has NOTHING to do with loading the kernel.
 It is meant as a template for loading other binaries from the kernel later,
@@ -48,7 +48,7 @@ It does not support complex formats or relocations.
 
 
 
-There is no guarantee that everything here is implemented correctly.
+# There is no guarantee that everything here is implemented correctly.
 Some parts may be inconsistent.
 
 I think the GDT and TSS might not be fully implemented in the kernel,
@@ -59,7 +59,7 @@ Do not confuse the “PS/2” driver with the “keyboard” driver.
 
 
 
-Problems:
+# Problems:
 
 After compiling and trying to run the bootloader, I either get a "Reboot system" and the machine restarts, which I assume is because my bootloader code is incorrect
 or not properly adapted to my hardware.
