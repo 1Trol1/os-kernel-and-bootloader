@@ -27,11 +27,11 @@ It is not universal — it only works on this specific hardware configuration.
 It may contain mistakes, because AI can lose context and generate fragments
 that later need to be corrected.
 
-All libraries are in a single folder because it makes compilation with Makefile easier.
-
 
 
 ### Things that may be unclear — kernel libraries:
+
+All libraries are in a single folder because it makes compilation with Makefile easier.
 
 kheap — a library that has NOTHING to do with loading the kernel.
 It is meant as a template for loading other binaries from the kernel later,
